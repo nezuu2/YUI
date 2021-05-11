@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/semilong"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/semilong"
     tools:context=".YourUserInterfaceActivity">
 
     <!--<EditText
@@ -39,6 +39,12 @@
 <!--        android:textSize="18sp"/>-->
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:id="@+id/view_id" />
 
     <TextView
         android:id="@+id/text_view"
@@ -54,6 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
         android:text="@string/button_TTS"
         android:onClick="onClick"/>
 
@@ -62,6 +70,8 @@
         android:text="@string/button_speech"
         android:layout_margin="30dp"
         android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"/>
