@@ -5,5 +5,7 @@
     <string name="error">No Activity</string>
     <string name="text">音声認識文字</string>
     <string name="button_speech">音声を入力</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
 
 </resources>

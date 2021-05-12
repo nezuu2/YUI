@@ -10,13 +10,17 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class AlarmNotification extends BroadcastReceiver {
 
+  @RequiresApi(api = Build.VERSION_CODES.O)
   @Override //  データを受信した
   public void onReceive(Context context, Intent intent) {
 
