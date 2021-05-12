@@ -27,6 +27,7 @@ import java.util.Locale;
 
 public class YourUserInterfaceActivity extends AppCompatActivity
         implements View.OnClickListener, TextToSpeech.OnInitListener {
+  MyGLView myGLView;
 
   /**
    * Alarm
@@ -53,6 +54,8 @@ public class YourUserInterfaceActivity extends AppCompatActivity
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    myGLView = new MyGLView(this);
+    setContentView(myGLView);
     setContentView(R.layout.activity_your_user_interface);
 
     /**
@@ -177,6 +180,18 @@ public class YourUserInterfaceActivity extends AppCompatActivity
       }
     });
 
+  }
+  @Override
+  protected void onResume(){
+    super.onResume();
+    myGLView.onResume();
+    myGLView.SetView();
+  }
+
+  @Override
+  protected void onPause(){
+    super.onPause();
+    myGLView.onPause();
   }
 
   /**
